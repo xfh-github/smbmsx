@@ -3,7 +3,7 @@ package com.xing.dao.user;
 import com.xing.pojo.User;
 
 import java.sql.Connection;
-import java.sql.SQLException;
+
 
 public interface UserDao {
     //得到登录的用户

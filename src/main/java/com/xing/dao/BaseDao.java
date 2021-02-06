@@ -19,7 +19,7 @@ public class BaseDao {
     //初始化连接参数,从配置文件里获得
     public static void init(){
         Properties params=new Properties();
-        String configFile = "database.properties";
+        String configFile = "db.properties";
         InputStream is= BaseDao.class.getClassLoader().getResourceAsStream(configFile);
         try {
             params.load(is);
@@ -30,7 +30,6 @@ public class BaseDao {
         url=params.getProperty("url");
         user=params.getProperty("user");
         password=params.getProperty("password");
-
     }
 
 
